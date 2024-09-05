@@ -1,0 +1,22 @@
+{
+  "surname": "Muzikova",
+  "download_CV": "Download CV",
+
+  "navbar_home": "Home",
+  "navbar_about": "About",
+  "navbar_projects": "Projects",
+  "navbar_contact": "Contact",
+
+  "about_aboutme": "About",
+  "about_introduction": "Introduction",
+  "about_location": "Prague",
+  "about_introText": "I am a junior frontend developer...",
+
+  "projects_work": "examples of my work",
+  "projects_projects": "Projects",
+  "projects_introText": "Following projects..",
+  "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_workoutapp_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_personalweb_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_sipnplay_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem."
+}

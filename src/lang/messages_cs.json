@@ -1,0 +1,22 @@
+{
+  "surname": "Mužíková",
+  "download_CV": "Stáhnout CV",
+
+  "navbar_home": "Domů",
+  "navbar_about": "O mně",
+  "navbar_projects": "Projekty",
+  "navbar_contact": "Kontakt",
+
+  "about_aboutme": "O mně",
+  "about_introduction": "Úvod",
+  "about_location": "Praha",
+  "about_introText": "Jsem junior frontend developerka...",
+
+  "projects_work": "Ukázky mé práce",
+  "projects_projects": "Projekty",
+  "projects_introText": "Následující projekty..",
+  "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_workoutapp_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_personalweb_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_sipnplay_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem."
+}

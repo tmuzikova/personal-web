@@ -1,14 +1,9 @@
-import {
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
-  StarsCanvas,
-} from "./canvas";
+import { EarthCanvas, StarsCanvas } from "./canvas";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
-import Tech from "./Tech";
-import Experience from "./Experience";
+import TechCard from "./TechCard";
+
 import Works from "./Works";
 import Contact from "./Contact";
 
@@ -16,12 +11,9 @@ export {
   Hero,
   Navbar,
   About,
-  Tech,
-  Experience,
+  TechCard,
   Works,
   Contact,
   EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
   StarsCanvas,
 };

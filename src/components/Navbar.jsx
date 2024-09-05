@@ -1,71 +1,117 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants/constants";
-import { logo, menu, close } from "../assets";
+import { menu, close } from "../assets";
+import { LanguageSelector } from "./LanguageSelector";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-5  fixed top-0 z-20 transition-all duration-300 ${
+        isScrolled ? "bg-primary border-b-2 border-secondary" : "bg-transparent"
+      }`}
     >
-      <div className=" w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0); //this will scroll to the top of the page
-          }}
-        >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-        </Link>
+      <div className=" w-full flex justify-end  max-w-7xl mx-auto">
         <ul className="list-none hidden sm:flex flex-row gap-10">
+          <Link
+            to="/"
+            className={`${
+              active === "" ? "text-white" : "text-lightTeal"
+            } hover:text-white text-[18px] font-medium cursor-pointer`}
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
+          >
+            <FormattedMessage id="navbar_home" />
+          </Link>
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
+                active === link.title ? "text-white" : "text-lightTeal"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              <a href={`#${link.id}`}>
+                <FormattedMessage id={link.title} />
+              </a>
             </li>
           ))}
+          <div className="LanguageSelectorContainer">
+            <LanguageSelector />
+          </div>
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        {/*COLLAPSED NAVBAR*/}
+        <div className="sm:hidden flex justify-end ">
           <img
             src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className="w-[28px] h-[28px] object-contain cursor-pointer z-20"
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } pt-20 p-6 bg-lightTeal absolute top-0 right-0 w-full h-screen z-10 flex justify-center items-center`}
           >
-            <ul className="list-none flex justify-end items-start flex-col gap-4">
+            <ul className="list-none flex items-center flex-col gap-4">
+              <Link
+                to="/"
+                className={`${
+                  active === "" ? "text-navyBlue" : "text-slateGray"
+                }  font-medium cursor-pointer text-[18px]`}
+                onClick={() => {
+                  setActive("");
+                  setToggle(!toggle);
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <FormattedMessage id="navbar_home" />
+              </Link>
               {navLinks.map((link) => (
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-white" : "text-secondary"
-                  } font-poppins font-medium cursor-pointer text-[16px]`}
+                    active === link.title ? "text-navyBlue" : "text-slateGray"
+                  }  font-medium cursor-pointer text-[18px]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <a href={`#${link.id}`}>
+                    <FormattedMessage id={link.title} />
+                  </a>
                 </li>
               ))}
+              <div className="LanguageSelectorContainer">
+                <LanguageSelector />
+              </div>
             </ul>
           </div>
         </div>
