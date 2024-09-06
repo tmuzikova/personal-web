@@ -10,6 +10,7 @@ import {
   physioreact,
   personalweb,
   sipnplay,
+  bootstrap,
 } from "../assets";
 
 export const navLinks = [
@@ -53,7 +54,10 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
   {
     name: "Three JS",
     icon: threejs,
