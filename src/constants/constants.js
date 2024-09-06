@@ -6,7 +6,7 @@ import {
   reactjs,
   tailwind,
   git,
-  threejs,
+  github,
   physioreact,
   personalweb,
   sipnplay,
@@ -59,12 +59,12 @@ const technologies = [
     icon: bootstrap,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Git",
+    icon: git,
   },
   {
-    name: "git",
-    icon: git,
+    name: "GitHub",
+    icon: github,
   },
 ];
 

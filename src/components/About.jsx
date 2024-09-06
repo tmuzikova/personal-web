@@ -28,7 +28,7 @@ const About = () => {
           <FormattedMessage id="about_introText" />
         </div>
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10 sm:justify-start justify-center">
         {technologies.map((technology, index) => (
           <TechCard key={technology.name} index={index} {...technology} />
         ))}

@@ -39,8 +39,8 @@ const Navbar = () => {
           <Link
             to="/"
             className={`${
-              active === "" ? "text-white" : "text-lightTeal"
-            } hover:text-white text-[18px] font-medium cursor-pointer`}
+              active === "" && "opacity-100 text-[20px]"
+            } text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer`}
             onClick={() => {
               setActive("");
               window.scrollTo(0, 0);
@@ -52,8 +52,8 @@ const Navbar = () => {
             <li
               key={link.id}
               className={`${
-                active === link.title ? "text-white" : "text-lightTeal"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title && "opacity-100 text-[20px]"
+              } text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>
@@ -83,8 +83,8 @@ const Navbar = () => {
               <Link
                 to="/"
                 className={`${
-                  active === "" ? "text-navyBlue" : "text-slateGray"
-                }  font-medium cursor-pointer text-[18px]`}
+                  active === "" && "text-[20px]"
+                }  font-medium cursor-pointer text-[18pterex]`}
                 onClick={() => {
                   setActive("");
                   setToggle(!toggle);
