@@ -17,7 +17,7 @@
   "projects_introText": "Následující projekty..",
   "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem. Projekt byl vytvořen ve skupině 4 vývojářek, díky čemuž jsem si vyzkoušela spolupráci v týmu, což prospělo nejen mým znalostem gitu. :)",
   "projects_workoutapp_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
-  "projects_personalweb_text": "Osobní webová stránka sloužíci jako portfolio. Pro styling jsem poprvé využila tailwind, přidala animace pomocí Framer Motion a 3D prvky díky ThreeJS.",
+  "projects_personalweb_text": "Osobní webová stránka sloužící jako portfolio. Pro styling jsem poprvé využila Tailwind, přidala animace pomocí Framer Motion a 3D prvky díky ThreeJS.",
   "projects_sipnplay_text": "Jednoduchá webová stránka pro kavárnu s deskovými hrami vytvořená v rámci 24h solo hackathonu. Cílem bylo vytvořit responzivní stránky s 3D elementy v menu a kalendářem s nadcházejícími událostmi. Poprvé jsem si vyzkoušela programování v časovém presu.",
 
   "contact_getintouch": "Spojme se",
@@ -32,5 +32,6 @@
   "contact_messageQ": "...",
   "contact_sending": "Odesílám",
   "contact_send": "Odeslat",
-  "contact_alert": "Děkuji za zprávu, brzy se vám ozvu."
+  "contact_alert": "Děkuji za zprávu, brzy se vám ozvu.",
+  "contact_error": "Ups, něco se nepovedlo! Zkuste to prosím znovu, případně se mi ozvěte přímo na email tereza.muzikova@gmail.com"
 }
