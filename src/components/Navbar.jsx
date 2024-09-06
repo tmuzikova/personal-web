@@ -77,14 +77,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } pt-20 p-6 bg-lightTeal absolute top-0 right-0 w-full h-screen z-10 flex justify-center items-center`}
+            } pt-20 p-6 bg-primary absolute top-0 right-0 w-full h-screen z-10 flex justify-center items-center`}
           >
             <ul className="list-none flex items-center flex-col gap-4">
               <Link
                 to="/"
                 className={`${
                   active === "" && "text-[20px]"
-                }  font-medium cursor-pointer text-[18pterex]`}
+                }  font-medium cursor-pointer text-[18px] text-white`}
                 onClick={() => {
                   setActive("");
                   setToggle(!toggle);
@@ -97,8 +97,8 @@ const Navbar = () => {
                 <li
                   key={link.id}
                   className={`${
-                    active === link.title ? "text-navyBlue" : "text-slateGray"
-                  }  font-medium cursor-pointer text-[18px]`}
+                    active === link.title && "text-[20px]"
+                  }  font-medium cursor-pointer text-[18px] text-white`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
