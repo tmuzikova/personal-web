@@ -26,6 +26,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import physioreact from "./physioreact.png";
+import personalweb from "./personalweb.png";
+import sipnplay from "./sipnplay.png";
 
 export {
   logo,
@@ -53,4 +55,6 @@ export {
   typescript,
   threejs,
   physioreact,
+  personalweb,
+  sipnplay,
 };

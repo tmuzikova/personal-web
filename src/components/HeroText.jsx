@@ -7,8 +7,8 @@ export const HeroText = () => {
   return (
     <div className={`sm:mt-20 flex flex-row items-start gap-5  max-w-7xl`}>
       <div className="flex flex-col justify-center items-center mt-5">
-        <div className="w-5 h-5 rounded-full bg-lightTeal" />
-        <div className="w-1 sm:h-80 h-40 lightTeal-gradient" />
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div className="w-1 sm:h-80 h-40 white-gradient" />
       </div>
       <div>
         <h1 className={`${styles.heroHeadText}`}>

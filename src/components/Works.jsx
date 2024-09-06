@@ -14,6 +14,7 @@ const ProjectCard = ({
   description,
   image,
   source_code_link,
+  live_link,
   tags,
 }) => {
   return (
@@ -37,17 +38,17 @@ const ProjectCard = ({
               <img
                 src={github_black}
                 alt="github"
-                className="w-10 h-10 rounded-full opacity-80 object-contain"
+                className="w-10 h-10 rounded-full opacity-80 hover:opacity-100 object-contain"
               />
             </div>
             <div
-              onClick={() => window.open(web, "_blank")}
+              onClick={() => window.open(live_link, "_blank")}
               className="flex justify-center items-center cursor-pointer"
             >
               <img
                 src={web}
                 alt="web"
-                className="w-9 h-9 rounded-full opacity-80 object-contain"
+                className="w-9 h-9 rounded-full opacity-80 hover:opacity-100 object-contain"
               />
             </div>
           </div>
@@ -79,7 +80,6 @@ const Works = () => {
           <FormattedMessage id="projects_work" />
         </p>
         <h2 className={styles.sectionHeadText}>
-          {" "}
           <FormattedMessage id="projects_projects" />
         </h2>
       </motion.div>

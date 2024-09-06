@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,7 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: "#DFF3FC";
-  font-family: "Roboto Mono";
+  font-family: "Space Grotesk";
   scroll-behavior: smooth;
 }
 
@@ -29,18 +30,10 @@
   display: block;
 }
 
-.lightTeal-gradient {
-  background: theme("colors.lightTeal");
-  background: linear-gradient(
-    -90deg,
-    theme("colors.lightTeal") 0%,
-    transparent 100%
-  );
-  background: -webkit-linear-gradient(
-    -90deg,
-    theme("colors.lightTeal") 0%,
-    transparent 100%
-  );
+.white-gradient {
+  background: white;
+  background: linear-gradient(-90deg, white 0%, transparent 100%);
+  background: -webkit-linear-gradient(-90deg, white 0%, transparent 100%);
 }
 
 .green-pink-gradient {

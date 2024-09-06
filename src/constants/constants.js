@@ -8,6 +8,8 @@ import {
   git,
   threejs,
   physioreact,
+  personalweb,
+  sipnplay,
 } from "../assets";
 
 export const navLinks = [
@@ -81,28 +83,10 @@ const projects = [
       },
     ],
     image: physioreact,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/helberan/team-project",
+    live_link: "https://helberan.github.io/team-project/",
   },
-  {
-    name: "Workout App",
-    description: "projects_workoutapp_text",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: physioreact,
-    source_code_link: "https://github.com/",
-  },
+
   {
     name: "Osobní web",
     description: "projects_personalweb_text",
@@ -121,8 +105,9 @@ const projects = [
       },
       { name: "framerMotion", color: "blue-text-gradient" },
     ],
-    image: physioreact,
+    image: personalweb,
     source_code_link: "https://github.com/",
+    live_link: "helberan.github.io/team-project/",
   },
   {
     name: "Sip n' Play",
@@ -141,8 +126,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: physioreact,
-    source_code_link: "https://github.com/",
+    image: sipnplay,
+    source_code_link: "https://github.com/tmuzikova/codedex-hackathon-24",
+    live_link: "https://sipnplay-codedex.netlify.app/",
   },
 ];
 

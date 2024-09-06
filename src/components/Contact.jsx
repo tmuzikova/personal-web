@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FormattedMessage, useIntl } from "react-intl";
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -12,6 +13,7 @@ const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [loading, setLoading] = useState(false);
   const formRef = useRef();
+  const intl = useIntl();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +39,7 @@ const Contact = () => {
       )
       .then(() => {
         setLoading(false);
-        alert("Thank you. I will get back to you as soon as possible.");
+        alert(intl.formatMessage({ id: "contact_alert" }));
 
         setForm({ name: "", email: "", message: "" });
         (error) => {
@@ -54,8 +56,17 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 rounded-2xl p-8"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={styles.sectionSubText}>
+          <FormattedMessage id="contact_getintouch" />
+        </p>
+        <h3 className={styles.sectionHeadText}>
+          <FormattedMessage id="contact_contact" />
+        </h3>
+        <p className="text-secondary">
+          <FormattedMessage id="contact_introTexta" />
+          <strong> tereza.muzikova@gmail.com</strong>
+          <FormattedMessage id="contact_introTextb" />
+        </p>
 
         <form
           ref={formRef}
@@ -63,43 +74,54 @@ const Contact = () => {
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="font-medium text-white mb-4">Your Name</span>
+            <span className="font-medium text-white mb-4">
+              <FormattedMessage id="contact_name" />
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder={intl.formatMessage({ id: "contact_nameQ" })}
               className="bg-tertiary px-6 py-4 placeholder:text-secondary border-none font-medium outlined-none rounded-lg text-white"
+              required
             />
           </label>
           <label className="flex flex-col">
-            <span className="font-medium text-white mb-4">Your Email</span>
+            <span className="font-medium text-white mb-4">
+              <FormattedMessage id="contact_email" />
+            </span>
             <input
               type="email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder={intl.formatMessage({ id: "contact_emailQ" })}
               className="bg-tertiary px-6 py-4 placeholder:text-secondary border-none font-medium outlined-none rounded-lg text-white"
+              required
             />
           </label>
           <label className="flex flex-col">
-            <span className="font-medium text-white mb-4">Your Message</span>
+            <span className="font-medium text-white mb-4">
+              <FormattedMessage id="contact_message" />
+            </span>
             <textarea
               rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder={intl.formatMessage({ id: "contact_messageQ" })}
               className="bg-tertiary px-6 py-4 placeholder:text-secondary border-none font-medium outlined-none rounded-lg text-white"
+              required
             />
           </label>
           <button
             type="submit"
             className="px-8 py-3 bg-tertiary shadow-md shadow-primary rounded-xl outline-none w-fit text-white font-bold"
           >
-            {loading ? "Sending..." : "Send"}{" "}
+            {loading
+              ? intl.formatMessage({ id: "contact_sending" })
+              : intl.formatMessage({ id: "contact_send" })}
           </button>
         </form>
       </motion.div>

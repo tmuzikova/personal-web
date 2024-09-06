@@ -18,5 +18,19 @@
   "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
   "projects_workoutapp_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
   "projects_personalweb_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
-  "projects_sipnplay_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem."
+  "projects_sipnplay_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+
+  "contact_getintouch": "Get in touch",
+  "contact_contact": "Contact",
+  "contact_introTexta": "Please contact me directly at ",
+  "contact_introTextb": " or drop your message below and I will get back to you ASAP.",
+  "contact_name": "Full name",
+  "contact_nameQ": "Your name",
+  "contact_email": "Your email",
+  "contact_emailQ": "you@example.com",
+  "contact_message": "Your message",
+  "contact_messageQ": "...",
+  "contact_sending": "Sending",
+  "contact_send": "Send",
+  "contact_alert": "Thank you for your message! I will get back to you as soon as possible."
 }
