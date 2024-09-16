@@ -27,7 +27,6 @@ export default {
       },
       backgroundImage: {
         "intro-pattern": "url('/src/assets/gradient_background.jpg')",
-        "others-pattern": "url('src/assets/grainy_bg')",
       },
     },
   },
