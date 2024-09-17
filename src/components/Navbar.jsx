@@ -10,7 +10,7 @@ import { LanguageSelector } from "./LanguageSelector";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [active, setActive] = useState("");
+
   const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
@@ -34,15 +34,12 @@ const Navbar = () => {
         isScrolled ? "bg-primary border-b-2 border-secondary" : "bg-transparent"
       }`}
     >
-      <div className=" w-full flex justify-end  max-w-7xl mx-auto">
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+      <div className=" w-full flex justify-end   max-w-7xl mx-auto">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           <Link
             to="/"
-            className={`${
-              active === "" && "opacity-100 text-[20px]"
-            } text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer`}
+            className="text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer"
             onClick={() => {
-              setActive("");
               window.scrollTo(0, 0);
             }}
           >
@@ -51,10 +48,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              className={`${
-                active === link.title && "opacity-100 text-[20px]"
-              } text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer`}
-              onClick={() => setActive(link.title)}
+              className="text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer"
             >
               <a href={`#${link.id}`}>
                 <FormattedMessage id={link.title} />
@@ -67,7 +61,7 @@ const Navbar = () => {
         </ul>
 
         {/*COLLAPSED NAVBAR*/}
-        <div className="sm:hidden flex justify-end ">
+        <div className="md:hidden flex justify-end ">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -82,11 +76,8 @@ const Navbar = () => {
             <ul className="list-none flex items-center flex-col gap-4">
               <Link
                 to="/"
-                className={`${
-                  active === "" && "text-[20px]"
-                }  font-medium cursor-pointer text-[18px] text-white`}
+                className="font-medium cursor-pointer text-[18px] text-white"
                 onClick={() => {
-                  setActive("");
                   setToggle(!toggle);
                   window.scrollTo(0, 0);
                 }}
@@ -96,12 +87,9 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${
-                    active === link.title && "text-[20px]"
-                  }  font-medium cursor-pointer text-[18px] text-white`}
+                  className="font-medium cursor-pointer text-[18px] text-white"
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
                   }}
                 >
                   <a href={`#${link.id}`}>

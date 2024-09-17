@@ -84,7 +84,6 @@ const Contact = () => {
               onClick={handleEmailClick}
               className="underline cursor-pointer"
             >
-              {" "}
               {email}
             </strong>
             <img

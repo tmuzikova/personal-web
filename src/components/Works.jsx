@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FormattedMessage } from "react-intl";
 
 import { styles } from "../styles";
-import { github_black, web } from "../assets";
+import { github, web } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -21,41 +21,45 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <div
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] sm:h-[500px] w-full"
+        className="bg-tertiary p-5 rounded-2xl md:w-[360px] md:h-[530px] w-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="w-full h-[230px]">
           <img
             src={image}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
-
-          <div className="absolute top-0 right-0 flex flex-col justify-end m-3 card-img-hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="flex justify-center items-center cursor-pointer mb-2"
-            >
-              <img
-                src={github_black}
-                alt="github"
-                className="w-10 h-10 rounded-full opacity-80 hover:opacity-100 object-contain"
-              />
-            </div>
-            <div
-              onClick={() => window.open(live_link, "_blank")}
-              className="flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={web}
-                alt="web"
-                className="w-9 h-9 rounded-full opacity-80 hover:opacity-100 object-contain"
-              />
+        </div>
+        <div className="mt-7">
+          <div className="flex justify-between ">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <div className="flex justify-center gap-2">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className=" cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github-icon"
+                  className="w-[30px] h-[30px] opacity-80 hover:opacity-100 "
+                />
+              </div>
+              <div
+                onClick={() => window.open(live_link, "_blank")}
+                className="cursor-pointer"
+              >
+                <img
+                  src={web}
+                  alt="web-icon"
+                  className="w-[30px] h-[30px]  opacity-80 hover:opacity-100 "
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">
+          <p
+            className="mt-2 text-secondary text-[14px]"
+            style={{ textAlign: "justify" }}
+          >
             <FormattedMessage id={description} />
           </p>
         </div>
@@ -88,6 +92,7 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          style={{ textAlign: "justify" }}
         >
           <FormattedMessage id="projects_introText" />
         </motion.p>

@@ -4,7 +4,6 @@ import email from "./email.png";
 import photo from "./photo.png";
 
 import github from "./github.png";
-import github_black from "./github_black.png";
 import web from "./web.png";
 import linkedin from "./linkedin.png";
 import download from "./download.png";
@@ -31,7 +30,6 @@ export {
   email,
   photo,
   github,
-  github_black,
   web,
   linkedin,
   download,

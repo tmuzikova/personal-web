@@ -1,24 +1,29 @@
 {
   "surname": "Mužíková",
   "download_CV": "Stáhnout CV",
+  "contact_me": "Kontaktujte mě",
 
   "navbar_home": "Domů",
   "navbar_about": "O mně",
+  "navbar_tech": "Tech",
   "navbar_projects": "Projekty",
   "navbar_contact": "Kontakt",
 
   "about_aboutme": "O mně",
   "about_introduction": "Úvod",
   "about_location": "Praha",
-  "about_introText": "Jsem junior frontend developerka...",
+  "about_introText": "Po vystudování výroby léčiv a při práci jako brand managerka jsem objevila do té doby skrytou vášeň pro frontend a webové aplikace. V posledním roce jsem se proto intenzivně věnovala kurzům a projektům s využitím HTML, CSS, JavaScriptu, a později Reactu v kombinaci s TypeScriptem a CSS frameworkům jako je Bootstrap nebo Tailwind. Okrajově se nyní zajímám i o 3D modely s využitím ThreeJS, zkouším animace pomocí Framer Motion nebo GSAP a taky mě moc baví AI ve všech směrech. Na frontendu mě naplňuje kombinace potřebného technického a logického přemýšlení s řešením vizuální stránky a uživatelsky přívětivého rozhraní.",
+
+  "about_tech": "S čím pracuji",
+  "about_headTech": "Technologie & Nástroje",
 
   "projects_work": "Ukázky mé práce",
   "projects_projects": "Projekty",
-  "projects_introText": "Následující projekty..",
+  "projects_introText": "V rámci mé cesty k tomu, stát se frontendovou vývojářkou jsem tvořila spoustu projektů, ať už v rámci kurzů, tak posléze sama. Následující projekty jsem vybrala jako ty nejdůležitější, které jsem tvořila bez pomoci kurzů a mám pocit, že mi daly nejvíce.",
   "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem. Projekt byl vytvořen ve skupině 4 vývojářek, díky čemuž jsem si vyzkoušela spolupráci v týmu, což prospělo nejen mým znalostem gitu. :)",
-  "projects_workoutapp_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem.",
+  "projects_workoutapp_text": "FitFlow je webová aplikace sloužící jako pomocník pro hybridní sportovce. Pomocí Strava API stahuje data o jednotlivých aktivitách sportovce včetně fotek a mapy, navíc obsahuje přehledovou tabulku. Dále umožňuje vygenerovat si soustavu cviků pro silový trénink, kdy jsou data získávána ze SupaBase. Prozatím poslední funkcionalitou je možnost poradit se s AI trenérem díky Google Gemini API. Pro stylování jsem použila Tailwind a přidala aplikace pomocí Framer Motion. Na tomto projektu v současné době stále pracuji.",
   "projects_personalweb_text": "Osobní webová stránka sloužící jako portfolio. Pro styling jsem poprvé využila Tailwind, přidala animace pomocí Framer Motion a 3D prvky díky ThreeJS.",
-  "projects_sipnplay_text": "Jednoduchá webová stránka pro kavárnu s deskovými hrami vytvořená v rámci 24h solo hackathonu. Cílem bylo vytvořit responzivní stránky s 3D elementy v menu a kalendářem s nadcházejícími událostmi. Poprvé jsem si vyzkoušela programování v časovém presu.",
+  "projects_sipnplay_text": "Jednoduchá webová stránka pro kavárnu s deskovými hrami vytvořená v rámci 24h solo hackathonu. Cílem bylo vytvořit responzivní stránky s 3D elementy v menu a kalendářem s nadcházejícími událostmi. Poprvé jsem si vyzkoušela programování v časovém presu a také ThreeJS.",
 
   "contact_getintouch": "Spojme se",
   "contact_contact": "Kontakt",
@@ -33,5 +38,7 @@
   "contact_sending": "Odesílám",
   "contact_send": "Odeslat",
   "contact_alert": "Děkuji za zprávu, brzy se vám ozvu.",
-  "contact_error": "Ups, něco se nepovedlo! Zkuste to prosím znovu, případně se mi ozvěte přímo na email tereza.muzikova@gmail.com"
+  "contact_error": "Ups, něco se nepovedlo! Zkuste to prosím znovu, případně se mi ozvěte přímo na email tereza.muzikova@gmail.com",
+
+  "footer_text": "Vytvořila"
 }
