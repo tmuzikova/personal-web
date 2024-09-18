@@ -12,10 +12,10 @@ export const HeroText = () => {
       </div>
       <div>
         <h1 className={`${styles.heroHeadText}`}>
-          <span className="text-lightTeal">
+          <a href="/" className="text-white">
             Tereza <br />
             <FormattedMessage id="surname" />
-          </span>
+          </a>
         </h1>
         <p className={`${styles.heroSubText} mt-2 `}>
           Junior Frontend Developer
