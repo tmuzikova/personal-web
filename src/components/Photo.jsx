@@ -15,6 +15,7 @@ export const Photo = () => {
         {/* The Photo */}
         <img
           src={photo}
+          alt="person-photo"
           className="ml-5 sm:ml-0 rounded-full w-[200px] sm:w-[250px] md:w-[300px] lg:w-[450px] z-20 relative"
         />
 

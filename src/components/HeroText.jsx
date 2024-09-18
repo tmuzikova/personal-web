@@ -25,7 +25,7 @@ export const HeroText = () => {
           <div>
             <a href="#contact">
               <button className="flex flex-row outline bg-primary rounded text-white py-2 px-5 opacity-80 hover:opacity-100">
-                <img src={email} className="w-6 h-6 mr-3" />
+                <img src={email} alt="email-icon" className="w-6 h-6 mr-3" />
                 <span>
                   <FormattedMessage id="contact_me" />
                 </span>
@@ -34,7 +34,11 @@ export const HeroText = () => {
           </div>
           <div>
             <button className="flex flex-row outline bg-primary rounded text-white py-2 px-6 opacity-80 hover:opacity-100">
-              <img src={download} className="w-6 h-6 mr-3" />
+              <img
+                src={download}
+                alt="download-icon"
+                className="w-6 h-6 mr-3"
+              />
               <span>
                 <FormattedMessage id="download_CV" />
               </span>
