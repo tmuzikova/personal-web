@@ -15,12 +15,12 @@ export const Photo = () => {
         {/* The Photo */}
         <img
           src={photo}
-          className="rounded-full w-[200px] sm:w-[250px] md:w-[300px] lg:w-[450px] z-20 relative"
+          className="ml-5 sm:ml-0 rounded-full w-[200px] sm:w-[250px] md:w-[300px] lg:w-[450px] z-20 relative"
         />
 
         {/* The Rotating Circle */}
         <motion.svg
-          className="absolute inset-0 w-full h-full z-10"
+          className="hidden sm:block absolute inset-0 w-full h-full z-10"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="https://www.w3.org/2000/svg"

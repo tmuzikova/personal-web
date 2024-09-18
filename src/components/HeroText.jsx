@@ -21,7 +21,7 @@ export const HeroText = () => {
           Junior Frontend Developer
         </p>
 
-        <div className="flex flex-row gap-5 items-center mt-7  ">
+        <div className="flex flex-col sm:flex-row gap-5 items-center mt-7  ">
           <div>
             <a href="#contact">
               <button className="flex flex-row outline bg-primary rounded text-white py-2 px-5 opacity-80 hover:opacity-100">
@@ -42,7 +42,7 @@ export const HeroText = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-2 mt-7">
+        <div className="flex justify-center sm:justify-start sm:flex-row gap-2 mt-7">
           <div className="w-11 h-11 cursor-pointer opacity-80 hover:opacity-100">
             <img
               src={github}
