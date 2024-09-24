@@ -12,7 +12,7 @@
   "about_aboutme": "About",
   "about_introduction": "Introduction",
   "about_location": "Prague",
-  "about_introText": "After graduating in pharmaceutical manufacturing and working as a brand manager, I discovered a previously hidden passion for frontend and web applications. So for the last year I have been working intensively on courses and projects using HTML, CSS, JavaScript and later React in combination with TypeScript and CSS frameworks like Bootstrap or Tailwind. Now I'm also interested in 3D models with ThreeJS, animations with Framer Motion or GSAP, and I'm really into AI in all directions. On the frontend, I find it fulfilling to combine the necessary technical and logical thinking with visual design and user-friendly interfaces.",
+  "about_introText": "After graduating in pharmaceutical manufacturing and working as a brand manager, I discovered a previously hidden passion for frontend and web applications. So for the last year I have been working intensively on courses and projects using HTML, CSS, JavaScript and later React in combination with TypeScript and CSS frameworks like Bootstrap or Tailwind. Now I'm also interested in 3D models with ThreeJS, animations with Framer Motion, and I'm really into AI in all directions. On the frontend, I find it fulfilling to combine the necessary technical and logical thinking with visual design and user-friendly interfaces.",
 
   "about_tech": "What I work with",
   "about_headTech": "Technology & Tools",
