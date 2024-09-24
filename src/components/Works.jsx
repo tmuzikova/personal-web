@@ -32,7 +32,9 @@ const ProjectCard = ({
         </div>
         <div className="mt-7">
           <div className="flex justify-between ">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <h3 className="text-white font-bold text-[24px]">
+              <FormattedMessage id={name} />
+            </h3>
             <div className="flex justify-center gap-2">
               <div
                 onClick={() => window.open(source_code_link, "_blank")}

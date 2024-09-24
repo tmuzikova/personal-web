@@ -23,6 +23,7 @@
   "projects_physioreact_text": "Webová stránka pro fiktivní fyzioterapeutickou kliniku s objednávkovým formulářem. Projekt byl vytvořen ve skupině 4 vývojářek, díky čemuž jsem si vyzkoušela spolupráci v týmu, což prospělo nejen mým znalostem gitu. :)",
   "projects_workoutapp_text": "FitFlow je webová aplikace sloužící jako pomocník pro hybridní sportovce. Pomocí Strava API stahuje data o jednotlivých aktivitách sportovce, a to včetně fotek a map, navíc obsahuje sumarizační přehledovou tabulku. Jelikož nedílnou součástí hybridního sportování je silový trénink, je možné si v aplikaci vygenerovat soustavu cviků podle svých kritérií, přičemž data jsou získávána z databáze SupaBase. Prozatím poslední funkcionalitou je možnost poradit se s AI trenérem díky Google Gemini API. Pro stylování jsem použila Tailwind a přidala animace pomocí Framer Motion. Na tomto projektu v současné době stále pracuji.",
   "projects_personalweb_text": "Osobní webová stránka sloužící jako portfolio. Pro styling jsem poprvé využila Tailwind, přidala animace pomocí Framer Motion a 3D prvky díky ThreeJS.",
+  "projects_personalweb_name": "Osobní web",
   "projects_sipnplay_text": "Jednoduchá webová stránka pro kavárnu s deskovými hrami vytvořená v rámci 24h solo hackathonu. Cílem bylo vytvořit responzivní stránky s 3D elementy v menu a kalendářem s nadcházejícími událostmi. Poprvé jsem si vyzkoušela programování v časovém presu a také ThreeJS.",
 
   "contact_getintouch": "Spojme se",

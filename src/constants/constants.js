@@ -96,7 +96,7 @@ const projects = [
   },
 
   {
-    name: "Osobní web",
+    name: "projects_personalweb_name",
     description: "projects_personalweb_text",
     tags: [
       {
