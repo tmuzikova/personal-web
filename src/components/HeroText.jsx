@@ -2,8 +2,20 @@ import { styles } from "../styles";
 import { FormattedMessage } from "react-intl";
 
 import { github, linkedin, download, email } from "../assets";
+import { useLanguageContext } from "./LanguageContext";
 
 export const HeroText = () => {
+  const { language } = useLanguageContext(); // to get current language
+
+  const downloadCV = () => {
+    const cvFile =
+      language === "cs" ? "/CV_Muzikova_cz.pdf" : "/CV_Muzikova_en.pdf"; // Choose the CV based on language
+    const link = document.createElement("a");
+    link.href = cvFile;
+    link.download = `Tereza_Muzikova_CV_${language}.pdf`; // File name based on language
+    link.click();
+  };
+
   return (
     <div className={`md:mt-20 flex flex-row items-start gap-5  max-w-7xl`}>
       <div className="hidden md:flex flex-col justify-center items-center mt-5">
@@ -33,7 +45,10 @@ export const HeroText = () => {
             </a>
           </div>
           <div>
-            <button className="flex flex-row outline bg-primary rounded text-white py-2 px-6 opacity-80 hover:opacity-100">
+            <button
+              className="flex flex-row outline bg-primary rounded text-white py-2 px-6 opacity-80 hover:opacity-100"
+              onClick={downloadCV}
+            >
               <img
                 src={download}
                 alt="download-icon"

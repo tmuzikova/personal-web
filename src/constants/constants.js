@@ -74,7 +74,7 @@ const technologies = [
 
 const projects = [
   {
-    name: "PhysioReact",
+    name: "projects_physioreact_name",
     description: "projects_physioreact_text",
     tags: [
       {
@@ -118,7 +118,7 @@ const projects = [
     live_link: "helberan.github.io/team-project/",
   },
   {
-    name: "Sip n' Play",
+    name: "projects_sipnplay_name",
     description: "projects_sipnplay_text",
     tags: [
       {
