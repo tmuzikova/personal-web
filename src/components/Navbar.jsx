@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants/constants";
+import { NAVLINKS } from "../constants/constants";
 import { menu, close } from "../assets";
 import { LanguageSelector } from "./LanguageSelector";
 
@@ -45,7 +45,7 @@ const Navbar = () => {
           >
             <FormattedMessage id="navbar_home" />
           </Link>
-          {navLinks.map((link) => (
+          {NAVLINKS.map((link) => (
             <li
               key={link.id}
               className="text-white opacity-80 text-[18px] hover:opacity-100 font-medium cursor-pointer"
@@ -84,7 +84,7 @@ const Navbar = () => {
               >
                 <FormattedMessage id="navbar_home" />
               </Link>
-              {navLinks.map((link) => (
+              {NAVLINKS.map((link) => (
                 <li
                   key={link.id}
                   className="font-medium cursor-pointer text-[18px] text-white"

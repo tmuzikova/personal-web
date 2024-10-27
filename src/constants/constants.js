@@ -13,7 +13,7 @@ import {
   bootstrap,
 } from "../assets";
 
-export const navLinks = [
+export const NAVLINKS = [
   {
     id: "about",
     title: "navbar_about",
@@ -32,7 +32,7 @@ export const navLinks = [
   },
 ];
 
-const technologies = [
+const TECHNOLOGIES = [
   {
     name: "HTML 5",
     icon: html,
@@ -72,7 +72,7 @@ const technologies = [
   },
 ];
 
-const projects = [
+const PROJECTS = [
   {
     name: "projects_physioreact_name",
     description: "projects_physioreact_text",
@@ -140,4 +140,4 @@ const projects = [
   },
 ];
 
-export { technologies, projects };
+export { TECHNOLOGIES, PROJECTS };

@@ -33,9 +33,9 @@ function App() {
             <div className="fixed top-0 left-0 w-full z-20">
               <Navbar />
             </div>
-            <div className="relative bg-intro-pattern bg-cover bg-no-repeat bg-center">
+            <div className="relative bg-intro-pattern bg-cover bg-no-repeat bg-center ">
               <div
-                className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#481557] z-0"
+                className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#481557] z-0 "
                 style={{
                   backgroundImage:
                     "linear-gradient(to bottom, transparent 55%, #481557 100%)",

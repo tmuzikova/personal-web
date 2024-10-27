@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import copy from "./copy.png";
 import email from "./email.png";
 import photo from "./photo.png";
+import profilovka from "./profilovka.jpg";
 
 import github from "./github.png";
 import web from "./web.png";
@@ -17,7 +18,6 @@ import javascript from "./tech/javascript.png";
 import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
 import bootstrap from "./tech/bootstrap.png";
 
 import physioreact from "./physioreact.png";
@@ -29,6 +29,7 @@ export {
   copy,
   email,
   photo,
+  profilovka,
   github,
   web,
   linkedin,
@@ -42,7 +43,6 @@ export {
   reactjs,
   tailwind,
   typescript,
-  threejs,
   bootstrap,
   physioreact,
   personalweb,

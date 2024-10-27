@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl";
 import { styles } from "../styles";
 import { github, web } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants/constants";
+import { PROJECTS } from "../constants/constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
@@ -101,7 +101,7 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
+        {PROJECTS.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}
       </div>

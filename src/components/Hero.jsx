@@ -6,8 +6,10 @@ import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <section className={`${styles.paddingX} relative w-full h-screen mx-auto`}>
-      <div className="flex flex-col-reverse justify-center sm:flex-row sm:justify-evenly items-center h-full">
+    <section
+      className={` relative flex items-center justify-center  w-full min-h-[100vh] mx-auto`}
+    >
+      <div className="flex flex-col-reverse  lg:flex-row lg:gap-32 h-full">
         <HeroText />
         <div className=" sm:mt-20">
           <Photo />
